@@ -24,7 +24,12 @@
  */
 
 // TODO: get20sEmail 함수를 작성하세요.
-function get20sEmail() {}
+function get20sEmail(arr) {
+  const filter20sUser = (user) => user.age >= 20;
+  const sortByAge = (a,b) => b.age - a.age;
+  const getUserEmail = (user => user.email);
+  return arr.filter(filter20sUser).sort(sortByAge).map(getUserEmail);
+}
 
 // export를 수정하지 마세요.
 export { get20sEmail };

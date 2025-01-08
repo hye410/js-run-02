@@ -13,6 +13,18 @@
 // TODO: calculateStatistics 함수를 작성하세요.
 function calculateStatistics(users) {
   // TODO
+  let ages = [];
+  
+  const sumOfAge = users.reduce((sumOfAge,user) =>{ 
+    sumOfAge += user.age;
+    ages.push(user.age);
+  },0);
+
+  const averageAge = sumOfAge / users.length;
+  
+  const maxAge = Math.max(ages);
+
+  return { averageAge ,maxAge }
 }
 
 // export를 수정하지 마세요.

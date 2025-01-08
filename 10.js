@@ -11,6 +11,7 @@
  *   { name: 'Bob', group: 'B' },
  *   { name: 'Charlie', group: 'A' }
  * ];
+ * 
  * groupBy(data, 'group') =>
  * {
  *   A: [
@@ -31,6 +32,7 @@
 
 function groupBy(arr, key) {
   // 여기에 코드를 작성하세요.
+  
 }
 
 // export를 수정하지 마세요.
